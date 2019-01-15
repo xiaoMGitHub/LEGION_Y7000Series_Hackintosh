@@ -67,3 +67,5 @@
 | 微信                                                       | 支付宝                                               |
 | ---------------------------------------------------------- | ---------------------------------------------------- |
 | ![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E5%BE%AE%E4%BF%A1160.jpg) | ![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E6%94%AF%E4%BB%98%E5%AE%9D160.jpg) |
+
+## QQ群：285680890
