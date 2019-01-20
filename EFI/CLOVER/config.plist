@@ -16,6 +16,10 @@
 				<false/>
 				<key>FixHPET</key>
 				<false/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixRTC</key>
+				<false/>
 				<key>FixShutdown</key>
 				<false/>
 			</dict>
@@ -107,20 +111,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(GPRW,2,N) to XPRW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R1BSVwI=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBSVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Change EC0 to EC</string>
 					<key>Disabled</key>
 					<false/>
@@ -159,6 +149,48 @@
 					<key>Replace</key>
 					<data>
 					WFExMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(GPRW,2,N) to XPRW</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R1BSVwI=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwI=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1BUUwE=
+					</data>
+					<key>Replace</key>
+					<data>
+					WlBUUwE=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(_WAK,1,S) to ZWAK, pair with SSDT-PTSWAK.aml</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1dBSwk=
+					</data>
+					<key>Replace</key>
+					<data>
+					WldBSwk=
 					</data>
 				</dict>
 			</array>
@@ -351,6 +383,27 @@
 				</data>
 			</dict>
 		</array>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch 10.14.1 10.14.2 Beta by DalianSky</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				g/sPD4OPBAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/sPkJCQkJCQ
+				</data>
+			</dict>
+		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -362,17 +415,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>06/26/2018</string>
+		<string>09/17/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP151.88Z.0178.B00.1806260902</string>
+		<string>MBP152.88Z.F000.B00.1809171524</string>
 		<key>Board-ID</key>
-		<string>Mac-937A206F2EE63C01</string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C028481304NDM6CA8</string>
+		<string>C02851501GUJH4R8C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -383,6 +436,8 @@
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>220.200.252.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -398,13 +453,13 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro15,1</string>
+		<string>MacBookPro15,2</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
 		<key>SerialNumber</key>
-		<string>C02XR0FXKGYG</string>
+		<string>C02XV0AUJHCD</string>
 		<key>SmUUID</key>
-		<string>90D0BCD1-2B58-4F67-9F66-BC86CC9EAB88</string>
+		<string>BA71D1F8-C3DA-455D-B969-74B9D2736841</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -412,6 +467,8 @@
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
