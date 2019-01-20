@@ -5,7 +5,7 @@
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
-		<false/>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
@@ -15,13 +15,19 @@
 				<key>FakeLPC</key>
 				<false/>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixIPIC</key>
 				<true/>
+				<key>FixMutex</key>
+				<true/>
 				<key>FixRTC</key>
-				<false/>
+				<true/>
+				<key>FixRegions</key>
+				<true/>
 				<key>FixShutdown</key>
 				<false/>
+				<key>FixTMR</key>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -199,7 +205,7 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>#MCFG</string>
+				<string>MCFG</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -207,7 +213,9 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
-		<false/>
+		<true/>
+		<key>HaltEnabler</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -219,7 +227,7 @@
 				<key>PStates</key>
 				<false/>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
@@ -389,7 +397,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch 10.14.1 10.14.2 Beta by DalianSky</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g/sPD4OPBAAA
