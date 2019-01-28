@@ -47,6 +47,8 @@
 ![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E6%A6%82%E8%A7%88.png)
 ### 显示器
 ![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E5%86%85%E5%BB%BA%E6%98%BE%E7%A4%BA%E5%99%A8.png)
+### 电源按钮菜单
+![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E7%94%B5%E6%BA%90%E8%8F%9C%E5%8D%95.png)
 ### USB
 ![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/USB.png)
 ### 显卡
