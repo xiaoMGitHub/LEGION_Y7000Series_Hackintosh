@@ -17,7 +17,8 @@
 ##### 安装过程网上教程很多，不一一叙述，推荐去看黑果小兵的教程
 
 ## 注意
-安装成功后，请将 EFI/Clover/Kext/Other 下面的驱动转移到 /Library/Extensions
+- 如果水纹波花屏，可以用SwitchResX设置 Millions for colors 来解决
+- 如果开机经常 panic 建议降 EFI/CLOVER/kext/other 下面的驱动转移到 /Library/Extensions 来解决
 
 ## 正常工作的功能
 - UEFI通过Clover启动。
