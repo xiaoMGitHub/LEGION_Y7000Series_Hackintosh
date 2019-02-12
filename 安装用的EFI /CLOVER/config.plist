@@ -45,9 +45,17 @@
 		<key>DropTables</key>
 		<array>
 			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
+    <key>Signature</key>
+    <string>MATS</string>
+  </dict>
+  <dict>
+    <key>Signature</key>
+    <string>DMAR</string>
+  </dict>
+  <dict>
+    <key>Signature</key>
+    <string>BGRT</string>
+  </dict>
 		</array>
 		<key>FixHeaders</key>
 		<false/>
