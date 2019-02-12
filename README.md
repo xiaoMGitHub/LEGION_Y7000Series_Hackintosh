@@ -18,7 +18,7 @@
 
 ## 注意
 - 如果水纹波花屏，可以用SwitchResX设置 Millions for colors 来解决
-- 如果开机经常 panic 建议降 EFI/CLOVER/kext/other 下面的驱动转移到 /Library/Extensions 来解决
+- 如果开机经常 panic 建议将 EFI/CLOVER/kext/other 下面的驱动转移到 /Library/Extensions 来解决
 
 ## 正常工作的功能
 - UEFI通过Clover启动。
