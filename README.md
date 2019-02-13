@@ -1,4 +1,7 @@
 ## 概述（欢迎加入拯救者Y7000/y530系列黑苹果QQ群：285680890）
+
+[中文版](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README.md)|[English](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-en.md)
+
 本文的目的是让Lenovo Legion Y7000 笔记本电脑系列尽量完美的使用上Mojave
 
 注意：此系列笔记本电脑似乎没有WiFi白名单，因此您无需进行任何BIOS修改。
