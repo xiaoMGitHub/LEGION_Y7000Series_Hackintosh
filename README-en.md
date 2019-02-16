@@ -22,7 +22,6 @@ Tips: Y7000 does not have whitelist upon WLAN hardware, you even do not need to 
 
 ## Attention
 - if Dashboard is blurred as gadgets are added, It can be solved by using SwitchResX to set Millions for colors
-- If panic always occured as system boots, try to move the kext files in EFI/CLOVER/kext/other to /Library/Extensions 
 
 ## Full Compatibility
 - Boot clover with UEFI mode
