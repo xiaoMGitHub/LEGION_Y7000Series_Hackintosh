@@ -1,4 +1,7 @@
 ## 概述（欢迎加入拯救者Y7000/y530系列黑苹果QQ群：285680890）
+
+[中文版](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README.md)|[English](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-en.md)
+
 本文的目的是让Lenovo Legion Y7000 笔记本电脑系列尽量完美的使用上Mojave
 
 注意：此系列笔记本电脑似乎没有WiFi白名单，因此您无需进行任何BIOS修改。
@@ -19,7 +22,6 @@
 
 ## 注意
 - 如果水纹波花屏，可以用SwitchResX设置 Millions for colors 来解决
-- 如果开机经常 panic 建议将 EFI/CLOVER/kext/other 下面的驱动转移到 /Library/Extensions 来解决
 
 ## 正常工作的功能
 - UEFI通过Clover启动。
