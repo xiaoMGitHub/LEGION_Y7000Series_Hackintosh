@@ -1047,6 +1047,25 @@
 			<key>idVendor</key>
 			<integer>2652</integer>
 		</dict>
+		<key>0a5c_22be</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.no-one.BrcmPatchRAM2</string>
+			<key>DisplayName</key>
+			<string>Broadcom BCM20702 Bluetooth 4.0 +HS USB Device</string>
+			<key>FirmwareKey</key>
+			<string>BCM20702A1_001.002.014.1443.1463_v5559</string>
+			<key>IOClass</key>
+			<string>BrcmPatchRAM2</string>
+			<key>IOMatchCategory</key>
+			<string>BrcmPatchRAM2</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostDevice</string>
+			<key>idProduct</key>
+			<integer>8894</integer>
+			<key>idVendor</key>
+			<integer>2652</integer>
+		</dict>
 		<key>0a5c_640b</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
