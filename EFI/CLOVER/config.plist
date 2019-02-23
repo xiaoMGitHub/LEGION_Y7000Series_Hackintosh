@@ -240,13 +240,13 @@
 		<key>DefaultVolume</key>
 		<string>Mac</string>
 		<key>Legacy</key>
-		<string>LegacyBiosDefault</string>
+		<string>PBR</string>
 		<key>Log</key>
 		<false/>
 		<key>NeverHibernate</key>
 		<false/>
 		<key>NoEarlyProgress</key>
-		<false/>
+		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>SimpleThemeDark</key>
@@ -315,6 +315,10 @@
 		<key>UseIntelHDMI</key>
 		<false/>
 	</dict>
+	<key>DisableDrivers</key>
+	<array>
+		<string>VBoxHfs</string>
+	</array>
 	<key>GUI</key>
 	<dict>
 		<key>Hide</key>
@@ -332,8 +336,6 @@
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
-			<false/>
-			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
 			<true/>
