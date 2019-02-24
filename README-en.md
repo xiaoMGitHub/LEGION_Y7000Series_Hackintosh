@@ -2,9 +2,9 @@
 
 [中文版](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README.md)|[English](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-en.md)
 
-Our purpose is to allow Lenovo Y7000 laptop to run mac OS mojave as natively as possible
+Our purpose is to allow Lenovo Y7000/Y530 laptop to run mac OS mojave as natively as possible
 
-Tips: Y7000 does not have whitelist upon WLAN hardware, you even do not need to modify your BIOS
+Tips: Y7000/Y530 does not have whitelist upon WLAN hardware, you even do not need to modify your BIOS
 
 ## What do you need
 - Lenovo Legion Y7000 Series Notebook
