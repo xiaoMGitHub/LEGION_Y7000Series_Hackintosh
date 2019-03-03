@@ -10,15 +10,15 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>AddDTGP</key>
+				<false/>
 				<key>AddPNLF</key>
 				<false/>
-				<key>FakeLPC</key>
+				<key>FixHDA</key>
 				<false/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
-				<true/>
-				<key>FixMutex</key>
 				<true/>
 				<key>FixRTC</key>
 				<true/>
@@ -33,6 +33,34 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
 					<key>Disabled</key>
 					<false/>
@@ -43,20 +71,6 @@
 					<key>Replace</key>
 					<data>
 					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
 					</data>
 				</dict>
 				<dict>
@@ -75,21 +89,61 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change _OSI to XOSI</string>
+					<string>HPET:BUF0 to XUF0</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
-					X09TSQ==
+					CEJVRjA=
 					</data>
 					<key>Replace</key>
 					<data>
-					WE9TSQ==
+					CFhVRjA=
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					SFBFVA==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change _DSM to XDSM</string>
+					<string>HPET:_STA to XSTA</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X1NUQQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNUQQ==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					SFBFVA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>HPET:_CRS to XCRS</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X0NSUw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WENSUw==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					SFBFVA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -103,21 +157,21 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change SAT0 to SATA</string>
+					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					U0FUMA==
+					SEVDSQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					U0FUQQ==
+					SU1FSQ==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change EC0 to EC</string>
+					<string>change EC0 to EC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -127,6 +181,34 @@
 					<key>Replace</key>
 					<data>
 					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _BIF to XBIF</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X0JJRg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEJJRg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _BST to XBST</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X0JTVA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEJTVA==
 					</data>
 				</dict>
 				<dict>
@@ -159,7 +241,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(GPRW,2,N) to XPRW</string>
+					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -201,21 +283,10 @@
 				</dict>
 			</array>
 		</dict>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>MCFG</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-		</array>
 		<key>FixHeaders</key>
 		<true/>
-		<key>HaltEnabler</key>
-		<true/>
+		<key>FixMCFG</key>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -233,12 +304,12 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>-v</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>DefaultVolume</key>
 		<string>Mac</string>
+		<key>HibernationFixup</key>
+		<false/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Log</key>
@@ -249,8 +320,6 @@
 		<true/>
 		<key>Secure</key>
 		<false/>
-		<key>SimpleThemeDark</key>
-		<string>LastBootedVolume</string>
 		<key>Timeout</key>
 		<integer>2</integer>
 		<key>XMPDetection</key>
@@ -258,8 +327,6 @@
 	</dict>
 	<key>CPU</key>
 	<dict>
-		<key>HWPEnable</key>
-		<false/>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -269,6 +336,8 @@
 		<dict>
 			<key>Inject</key>
 			<string>No</string>
+			<key>ResetHDA</key>
+			<false/>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -303,22 +372,22 @@
 				</data>
 			</dict>
 		</dict>
+		<key>SetIntelMaxBacklight</key>
+		<false/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
 			<true/>
 			<key>FixOwnership</key>
 			<true/>
+			<key>HighCurrent</key>
+			<false/>
 			<key>Inject</key>
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
 	</dict>
-	<key>DisableDrivers</key>
-	<array>
-		<string>VBoxHfs</string>
-	</array>
 	<key>GUI</key>
 	<dict>
 		<key>Hide</key>
@@ -390,7 +459,23 @@
 				igKEwOtC
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				ILniAAAADzA=
+				</data>
+				<key>Replace</key>
+				<data>
+				ILniAAAAkJA=
+				</data>
+			</dict>
 		</array>
+		<key>KernelXCPM</key>
+		<false/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -401,18 +486,20 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>Mobile</key>
-		<true/>
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
+		<true/>
+		<key>NoCaches</key>
 		<true/>
 	</dict>
 </dict>
