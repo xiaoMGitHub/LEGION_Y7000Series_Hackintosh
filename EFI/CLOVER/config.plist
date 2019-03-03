@@ -287,6 +287,8 @@
 		<true/>
 		<key>FixMCFG</key>
 		<false/>
+		<key>HaltEnabler</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
