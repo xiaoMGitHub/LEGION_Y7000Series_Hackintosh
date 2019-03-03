@@ -3,6 +3,7 @@
 [中文版](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README.md)|[English](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-en.md)
 
 本文的目的是让Lenovo Legion Y7000 笔记本电脑系列尽量完美的使用上Mojave
+- 更适合10.14以上系统使用的 [EFI](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/tree/new-efi) 分支
 
 注意：此系列笔记本电脑似乎没有WiFi白名单，因此您无需进行任何BIOS修改。
 
