@@ -89,60 +89,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>HPET:BUF0 to XUF0</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					CEJVRjA=
-					</data>
-					<key>Replace</key>
-					<data>
-					CFhVRjA=
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					SFBFVA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>HPET:_STA to XSTA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					X1NUQQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNUQQ==
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					SFBFVA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>HPET:_CRS to XCRS</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					X0NSUw==
-					</data>
-					<key>Replace</key>
-					<data>
-					WENSUw==
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					SFBFVA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<false/>
@@ -181,34 +127,6 @@
 					<key>Replace</key>
 					<data>
 					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _BIF to XBIF</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					X0JJRg==
-					</data>
-					<key>Replace</key>
-					<data>
-					WEJJRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _BST to XBST</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					X0JTVA==
-					</data>
-					<key>Replace</key>
-					<data>
-					WEJTVA==
 					</data>
 				</dict>
 				<dict>
@@ -288,7 +206,7 @@
 		<key>FixMCFG</key>
 		<false/>
 		<key>HaltEnabler</key>
-		<true/>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -306,6 +224,8 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>-v</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>DefaultVolume</key>
@@ -313,11 +233,11 @@
 		<key>HibernationFixup</key>
 		<false/>
 		<key>Legacy</key>
-		<string>PBR</string>
+		<string>LegacyBiosDefault</string>
 		<key>Log</key>
 		<false/>
 		<key>NeverHibernate</key>
-		<false/>
+		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
@@ -478,6 +398,45 @@
 		</array>
 		<key>KernelXCPM</key>
 		<false/>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2C</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+			</dict>
+		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -498,11 +457,11 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NoCaches</key>
-		<true/>
+		<false/>
 	</dict>
 </dict>
 </plist>
