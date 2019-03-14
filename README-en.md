@@ -49,26 +49,6 @@ Tips: Y7000/Y530 does not have whitelist upon WLAN hardware, you even do not nee
 - Execute "install双击自动安装.command"
 - This command is used to solve audio problem, if system can not shift ouput automatically as 3.5mm headphone has been plugged in, or the sound effect is rumble
 
-## System Screen Shot
-### System Info
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E6%A6%82%E8%A7%88.png)
-### Displays
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E5%86%85%E5%BB%BA%E6%98%BE%E7%A4%BA%E5%99%A8.png)
-### Power menu
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E7%94%B5%E6%BA%90%E8%8F%9C%E5%8D%95.png)
-### USB ports
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/USB.png)
-### Graphics
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E6%98%BE%E5%8D%A1.png)
-### Audio
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E5%A3%B0%E5%8D%A1.png)
-### Power
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E7%94%B5%E6%BA%90.png)
-### wifi
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/wifi.png)
-### Bluetooth
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E8%93%9D%E7%89%99.png)
-
 ## About tipping
 
 If you approve my work, please suppoort me to keep updating via tipping
