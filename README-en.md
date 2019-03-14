@@ -17,12 +17,6 @@ Tips: Y7000/Y530 does not have whitelist upon WLAN hardware, you even do not nee
 - security boot should be disabled
 - Storage mode: AHCI
 
-## Tutorial Video（Thanks for netizen "Z"）
-[Lenovo Legion Y7000/Y530 series hackintosh guide (attached with kext)](https://www.bilibili.com/video/av42366930)
-
-## Attention
-- if Dashboard is blurred as gadgets are added, It can be solved by using SwitchResX to set Millions for colors
-
 ## Full Compatibility
 - Boot clover with UEFI mode
 - Built-in keyboard (Function key and Num keyboard works well, Thanks for tech support from netizen "Dagouzi")
@@ -40,10 +34,10 @@ Tips: Y7000/Y530 does not have whitelist upon WLAN hardware, you even do not nee
 - Sleep + Wake (Waked by mouse, keyboard, and power button)
 - Wireless LAN (Broadcom BCM94352z)
 - Bluetooth (Broadcom BCM94352z)
+- Touchpad
 
 ## Disabled devices
 - HDMI, HDMI port is connected with disabled NVIDIA DGPU
-- Touchpad, we will keep updating this function. Currently, even though we try to follow penghubinzhou's guide to make i2c touchpad work, it doesn't work
 
 ## About how to use alc_fix
 - Execute "install双击自动安装.command"
