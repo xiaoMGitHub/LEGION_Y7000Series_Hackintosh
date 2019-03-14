@@ -50,29 +50,9 @@
 - 进入alc_fix目录下，执行 “install双击自动安装.command” 即可
 - 该程序主要是为了解决耳机插入时系统不能自动切换耳麦问题以及耳机杂音等问题
 
-## 系统截图
-### 概览
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E6%A6%82%E8%A7%88.png)
-### 显示器
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E5%86%85%E5%BB%BA%E6%98%BE%E7%A4%BA%E5%99%A8.png)
-### 电源按钮菜单
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E7%94%B5%E6%BA%90%E8%8F%9C%E5%8D%95.png)
-### USB
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/USB.png)
-### 显卡
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E6%98%BE%E5%8D%A1.png)
-### 声卡
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E5%A3%B0%E5%8D%A1.png)
-### 电源
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E7%94%B5%E6%BA%90.png)
-### wifi
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/wifi.png)
-### 蓝牙
-![image](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/screenshot/%E8%93%9D%E7%89%99.png)
+## 关于捐赠
 
-## 关于打赏
-
-如果您认可我的工作，请通过打赏支持我后续的更新
+如果您认可我的工作，请通过捐赠支持我后续的更新
 
 | 微信                                                       | 支付宝                                               |
 | ---------------------------------------------------------- | ---------------------------------------------------- |
