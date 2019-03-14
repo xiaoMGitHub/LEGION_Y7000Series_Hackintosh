@@ -18,12 +18,6 @@
 - 禁用安全启动。
 - SATA模式设置为AHCI。
 
-## 安装视频（感谢网友z的友情出演）
-[联想拯救者Y7000/Y530系列黑苹果安装教程（附驱动）](https://www.bilibili.com/video/av42366930)
-
-## 注意
-- 如果水纹波花屏，可以用SwitchResX设置 Millions for colors 来解决
-
 ## 正常工作的功能
 - UEFI通过Clover启动。
 - 内置键盘（带特殊功能键，小键盘已成功驱动，感谢大狗子网友的方法提供）。
