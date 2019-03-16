@@ -5,13 +5,13 @@
 	<key>BuildMachineOSBuild</key>
 	<string>17E202</string>
 	<key>CFBundleExecutable</key>
-	<string>BrcmFirmwareRepo</string>
+	<string>BrcmFirmwareData</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.no-one.BrcmFirmwareStore</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>BrcmFirmwareRepo</string>
+	<string>BrcmFirmwareData</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>

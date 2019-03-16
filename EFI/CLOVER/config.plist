@@ -317,11 +317,6 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<false/>
-		</dict>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
@@ -460,8 +455,6 @@
 		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
-		<key>NoCaches</key>
-		<false/>
 	</dict>
 </dict>
 </plist>
