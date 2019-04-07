@@ -1,4 +1,4 @@
-## Introduction (Welcome to our QQ (tencent chatting program) group：285680890)
+## Introduction
 
 [中文版](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README.md)|[English](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-en.md)
 
