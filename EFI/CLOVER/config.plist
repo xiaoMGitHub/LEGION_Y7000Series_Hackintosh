@@ -234,7 +234,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0</string>
+		<string>dart=0 -v</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>DefaultVolume</key>
