@@ -1,4 +1,4 @@
-# 数字键盘驱动说明
+# 数字键盘驱动使用说明
 
 1. 将 SSDT-PS2K.aml 覆盖到 EFI/CLOVER/ACPI/patched 中
 2. 移除 EFI/CLOVER/kexts/Other 中的 VoodooPS2Controller 驱动
