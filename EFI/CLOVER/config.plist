@@ -10,22 +10,16 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
-				<key>AddPNLF</key>
-				<false/>
-				<key>FakeLPC</key>
-				<false/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
 				<true/>
 				<key>FixMutex</key>
-				<false/>
+				<true/>
 				<key>FixRTC</key>
 				<true/>
 				<key>FixRegions</key>
 				<true/>
-				<key>FixShutdown</key>
-				<false/>
 				<key>FixTMR</key>
 				<true/>
 			</dict>
@@ -215,7 +209,7 @@
 		<key>FixHeaders</key>
 		<true/>
 		<key>HaltEnabler</key>
-		<false/>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -227,7 +221,7 @@
 				<key>PStates</key>
 				<false/>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
@@ -242,9 +236,9 @@
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>Log</key>
-		<true/>
+		<false/>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
@@ -254,7 +248,7 @@
 		<key>Timeout</key>
 		<integer>2</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -275,7 +269,9 @@
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
-				<integer>18</integer>
+				<data>
+				EgAAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -309,10 +305,6 @@
 		<key>UseIntelHDMI</key>
 		<false/>
 	</dict>
-	<key>DisableDrivers</key>
-	<array>
-		<string>VBoxHfs</string>
-	</array>
 	<key>GUI</key>
 	<dict>
 		<key>Hide</key>
@@ -323,7 +315,7 @@
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -332,7 +324,7 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<true/>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -384,45 +376,6 @@
 				<key>Replace</key>
 				<data>
 				igKEwOtC
-				</data>
-			</dict>
-		</array>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2C</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2CController</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
 				</data>
 			</dict>
 		</array>
