@@ -1,4 +1,6 @@
-## 概述（欢迎加入拯救者Y7000/y530系列黑苹果QQ群：285680890）
+## 概述
+
+疑问解答可以提 [issues](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/issues) 给我或者加入我的QQ群：285680890（为防止伸手党以及无关人员，进群模式改成了收费模式收费1元）
 
 [中文版](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README.md)|[English](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-en.md)
 
