@@ -10,7 +10,11 @@ DefinitionBlock("", "SSDT", 2, "legion", "_RMCF", 0)
     External(_SB.PCI0.PEGP.DGFX._ON, MethodObj)
     External(_SB.PCI0.PEGP.DGFX._OFF, MethodObj)
     External(_SB.PCI0.XHC.PMEE, FieldUnitObj)
+    External(_SB.PCI0.IGPU, DeviceObj)  
+    External(RMCF.IGPI, IntObj)
+    External(RMGO, PkgObj)
     External(XPRW, MethodObj)
+    External(RMCF.DAUD, IntObj)
     External(RMCF.DWOU, IntObj)
     External(ZPTS, MethodObj)
     External(ZWAK, MethodObj)   
@@ -23,6 +27,22 @@ DefinitionBlock("", "SSDT", 2, "legion", "_RMCF", 0)
     Device(RMCF)
     {
         Name(_ADR, 0)   // do not remove
+        
+        // IGPI: Override for ig-platform-id (or snb-platform-id).
+        // Will be used if non-zero, and not Ones
+        // Can be set to Ones to disable IGPU injection.
+        // For example, if you wanted to inject a bogus id, 0x12345678
+        //    Name(IGPI, 0x12345678)
+        // Or to disable, IGPU injection from SSDT-IGPU:
+        //    Name(IGPI, Ones)
+        // Or to set a custom ig-platform-id, example:
+        //    Name(IGPI, 0x01660008)
+        Name(IGPI, 0x3e9b0000)
+
+        // AUDL: Audio Layout
+        // The value here will be used to inject layout-id for HDEF and HDAU
+        // If set to Ones, no audio injection will be done.
+        Name(AUDL, 18)
 
         // DWOU: Disable wake on USB
         // 1: Disable wake on USB
@@ -56,6 +76,79 @@ DefinitionBlock("", "SSDT", 2, "legion", "_RMCF", 0)
         // 99: Other (requires custom AppleBacklightInjector.kext/AppleBackightFixup.kext)
         Name(_UID, 19)
         Name(_STA, 0x0B)
+    }
+    
+    Scope(_SB.PCI0.IGPU)
+    {
+        // need the device-id from PCI_config to inject correct properties
+        OperationRegion(RMP1, PCI_Config, 2, 2)
+        Field(RMP1, AnyAcc, NoLock, Preserve)
+        {
+            GDID,16,
+        }
+
+        // Note: all injection packages MUST have ig-platform-id as the first entry (for IGPI override)
+        // Note: all injection packages MUST have hda-gfx as second entry (for DAUD/RMDA feature)
+
+        // Injection tables for laptops
+        
+        // Injection tables for desktops
+        Name(DESK, Package()
+        {
+            // CoffeeLake/UHD630
+            0x3e92, 0, Package()
+            {
+                "AAPL,ig-platform-id", Buffer() { 0x00, 0x00, 0x12, 0x59 },
+                "hda-gfx", Buffer() { "onboard-1" },
+                "model", Buffer() { "Intel UHD Graphics 630" },
+                "device-id", Buffer() { 0x12, 0x59, 0x00, 0x00 },
+            },
+        })
+
+        // inject properties for integrated graphics on IGPU
+        Method(_DSM, 4)
+        {
+            // IGPU can be set to Ones to disable IGPU property injection (same as removing SSDT-IGPU.aml)
+            If (CondRefOf(\RMCF.IGPI)) { If (Ones == \RMCF.IGPI) { Return(0) } }
+            // otherwise, normal IGPU injection...
+            If (!Arg2) { Return (Buffer() { 0x03 } ) }
+            Local0 = Ones
+            For (,,)
+            {
+                // allow overrides in RMGO, if present
+                If (CondRefOf(\RMGO))
+                {
+                    Local1 = RMGO
+                    Local0 = Match(Local1, MEQ, GDID, MTR, 0, 0)
+                    if (Ones != Local0) { Break }
+                }
+                // search desktop table
+                Local1 = DESK
+                Local0 = Match(Local1, MEQ, GDID, MTR, 0, 0)
+                Break
+            }
+            // unrecognized device... inject nothing in this case
+            If (Ones == Local0) { Return (Package() { }) }
+            // start search for zero-terminator (prefix to injection package)
+            Local0 = DerefOf(Local1[Match(Local1, MEQ, 0, MTR, 0, Local0+1)+1])
+            // the user can provide an override of ig-platform-id (or snb-platform-id) in RMCF.IGPI
+            If (CondRefOf(\RMCF.IGPI))
+            {
+                if (0 != \RMCF.IGPI)
+                {
+                    // assumes that ig-platform-id value is always at index 1
+                    CreateDWordField(DerefOf(Local0[1]), 0, IGPI)
+                    IGPI = \RMCF.IGPI
+                }
+            }
+            // the user can disable "hda-gfx" injection by defining \RMDA or setting RMCF.DAUD=0
+            // assumes that "hda-gfx" is always at index 2 (eg. "hda-gfx" follows ig-platform-id)
+            Local1 = 0
+            If (CondRefOf(\RMDA)) { Local1 = 1 }
+            If (CondRefOf(\RMCF.DAUD)) { If (0 == \RMCF.DAUD) { Local1 = 1 } }
+            If (Local1) { Local0[2] = "#hda-gfx"; }
+            Return (Local0)
+        }
     }
     
     Scope(_SB.PCI0.LPCB)
@@ -222,6 +315,32 @@ DefinitionBlock("", "SSDT", 2, "legion", "_RMCF", 0)
                 "kUSBWakePowerSupply", 3200,
             })
         }
+    }
+    
+    // inject properties for audio
+    Method(_SB.PCI0.HDEF._DSM, 4)
+    {
+        If (CondRefOf(\RMCF.AUDL)) { If (Ones == \RMCF.AUDL) { Return(0) } }
+        If (!Arg2) { Return (Buffer() { 0x03 } ) }
+        Local0 = Package()
+        {
+            "layout-id", Buffer(4) { 2, 0, 0, 0 },
+            "hda-gfx", Buffer() { "onboard-1" },
+            "no-controller-patch", Buffer() { 1, 0, 0, 0 }, // disables automatic AppleALC patching
+            "PinConfigurations", Buffer() { },
+        }
+        If (CondRefOf(\RMCF.AUDL))
+        {
+            CreateDWordField(DerefOf(Local0[1]), 0, AUDL)
+            AUDL = \RMCF.AUDL
+        }
+        // the user can disable "hda-gfx" injection by defining \RMDA or setting RMCF.DAUD=0
+        // assumes that "hda-gfx" is always at index 2 (eg. "hda-gfx" follows ig-platform-id)
+        Local1 = 0
+        If (CondRefOf(\RMDA)) { Local1 = 1 }
+        If (CondRefOf(\RMCF.DAUD)) { If (0 == \RMCF.DAUD) { Local1 = 1 } }
+        If (Local1) { Local0[2] = "#hda-gfx"; }
+        Return(Local0)
     }
     
     // inject properties for XHCI
