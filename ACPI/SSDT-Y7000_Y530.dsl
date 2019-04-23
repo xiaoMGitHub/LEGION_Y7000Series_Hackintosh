@@ -23,6 +23,14 @@ DefinitionBlock("", "SSDT", 2, "legion", "_RMCF", 0)
     External(RMCF.XPEE, IntObj)
     External(RMCF.SSTF, IntObj)
     External(_SI._SST, MethodObj)
+    External (_SB_.PCI0.I2C1, DeviceObj)
+    External (_SB_.PCI0.I2C1.TPD0.BADR, UnknownObj)
+    External (_SB_.PCI0.I2C1.TPD0.HID2, IntObj)
+    External (_SB_.PCI0.I2C1.TPD0.SBFB, IntObj)
+    External (SSD1, FieldUnitObj)
+    External (SSH1, FieldUnitObj)
+    External (SSL1, FieldUnitObj)
+    External (TPTY, FieldUnitObj)
     
     Device(RMCF)
     {
@@ -497,5 +505,69 @@ DefinitionBlock("", "SSDT", 2, "legion", "_RMCF", 0)
         }
         Return (Ones != Match(Local0, MEQ, Arg0, MTR, 0, 0))
     }
+
+ Scope (_SB.PCI0.I2C1)
+    {
+        Method (SSCN, 0, NotSerialized)
+        {
+            Return (PKG3 (SSH1, SSL1, SSD1))
+        }
+
+        Method (FMCN, 0, NotSerialized)
+        {
+            Name (PKG, Package (0x03)
+            {
+                0x0101, 
+                0x012C, 
+                0x62
+            })
+            Return (PKG) /* \_SB_.PCI0.I2C1.FMCN.PKG_ */
+        }
+    }
+
+    Method (_SB.PCI0.I2C1.TPD0._CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+    {
+        Name (SBFS, ResourceTemplate ()
+        {
+            Interrupt (ResourceConsumer, Level, ActiveLow, ExclusiveAndWake, ,, )
+            {
+                0x000000FF,
+            }
+        })
+        If (LEqual (TPTY, One))
+        {
+            Store (0x15, BADR) /* External reference */
+            Store (One, HID2) /* External reference */
+        }
+
+        If (LEqual (TPTY, 0x02))
+        {
+            Store (0x2C, BADR) /* External reference */
+            Store (0x20, HID2) /* External reference */
+        }
+
+        If (LEqual (TPTY, 0x03))
+        {
+            Store (0x2A, BADR) /* External reference */
+            Store (0x20, HID2) /* External reference */
+        }
+
+        Return (ConcatenateResTemplate (SBFB, SBFS))
+    }
+
+    Method (PKG3, 3, Serialized)
+    {
+        Name (PKG, Package (0x03)
+        {
+            Zero, 
+            Zero, 
+            Zero
+        })
+        Store (Arg0, Index (PKG, Zero))
+        Store (Arg1, Index (PKG, One))
+        Store (Arg2, Index (PKG, 0x02))
+        Return (PKG) /* \PKG3.PKG_ */
+    }
+
 }
 
