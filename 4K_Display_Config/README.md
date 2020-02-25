@@ -1,5 +1,9 @@
 ## 概述
-首先感谢群友（小云飞）提供的修改方案，让 Y7000 系列（目前仅 2018款 Y7000P 144Hz 版本成功）换上了4K屏幕并在黑果下面实现了完美驱动。有兴趣可以加群讨论：1014806625
+首先感谢群友（小云飞）提供的修改方案，让 Y7000 系列换上了4K屏幕并在黑果下面实现了完美驱动。有兴趣可以加群讨论：1014806625
+
+## 成功机型
+* 2018款 y7000p 144Hz 版本
+* 2019款 y7000 1660ti 版本
 
 ## 你需要什么
 * 更换一块4K屏幕
@@ -10,7 +14,7 @@
 
   > 1、将 advance -> system agent(SA) configuration -> graphics configuration -> DVMT pre-Allocated 的数值由 32M 修改为  64M（只适用于八代处理器）
   
-  > 2、至于九代处理器的机子，可以使用 setup_var 的修改方法来修改 DVMT pre-Allocated 的数值，具体参考： [教程](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases) 
+  > 2、至于九代处理器的机子，可以使用 setup_var 的修改方法来修改 DVMT pre-Allocated 的数值，具体参考： [教程](http://bbs.pcbeta.com/viewthread-1845189-1-2.html) ，感谢群友 @晓 的坚持不懈的折腾。
   
   > 3、目前尚未找到通过修改配置文件 config.plist 实现的方法，如果你有更好的解决方案欢迎你告知我们。
   
