@@ -1,6 +1,9 @@
 ## 概述
 首先感谢群友（小云飞）提供的修改方案，让 Y7000 系列换上了4K屏幕并在黑果下面实现了完美驱动。有兴趣可以加群讨论：1014806625
 
+## 效果图
+![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/4K_Display_Config/4K_01.png)
+![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/4K_Display_Config/4K_02.png)
 ## 测试成功机型
 * 2018款 y7000p 144Hz 版本
 * 2019款 y7000 1660ti 版本
