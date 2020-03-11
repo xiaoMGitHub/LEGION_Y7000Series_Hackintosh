@@ -5,15 +5,18 @@
 ![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/4K_Display_Config/4K_01.png)
 ![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/4K_Display_Config/4K_02.png)
 ## 测试成功机型
-* 2018款 y7000p 144Hz 版本
+* 2018款 y7000P 1060 144Hz 版本
 * 2019款 y7000 1660ti 版本
+* 2019款 y7000P 1660ti 144Hz 版本
+* 2019款 y7000P RTX2060 144Hz 版本
 
 ## 你需要什么
 * 更换一块4K屏幕
 
   > 参考型号： 
-  * B156ZAN03.1 （2018款 y7000p 144Hz 版本测试通过） 
+  * B156ZAN03.1 （2018款 y7000P 1060 144Hz 版本、2019款 y7000P RTX2060 144Hz 版本测试通过） 
   * B156ZAN03.2 （2019款 y7000 1660ti 版本测试通过，y7000需要更换屏线，购买型号DC02C00FC10） 
+  * B156ZAN04.2 （2019款 y7000P 1660ti 144Hz 版本测试通过）
   
 * 修改BIOS高级模式
 
