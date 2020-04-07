@@ -45,6 +45,8 @@
 - 触控板 (部分低配机型不支持多指操作)
 - 随航（有线/无线）
 - 4K 屏幕（[教程](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/tree/master/4K_Display_Config)）
+- iMessage/FaceTime
+
 ## 不能正常使用的功能
 - HDMI ，因为HDMI 端口连接到已禁用的Nvidia卡
 
