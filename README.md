@@ -17,7 +17,7 @@
 ## 你需要什么
 - 下载好的 MacOS 镜像（支持 10.13.6 - 10.15.4 的镜像安装）
 - 16GB U盘
-- 8代处理安装 10.15.x 需要设置BIOS高级模式：[传送门](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/BIOS_Setup_Instructions.md)
+- 8代处理安装 10.15.x 需要设置BIOS高级模式：[传送门](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/BIOS_Setup/README.md)
 
 ## BIOS确保设置
 - 启用UEFI启动。
