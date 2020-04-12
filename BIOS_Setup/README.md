@@ -24,3 +24,5 @@
         ....
      }
   ```
+## 修改BIOS引导界面logo
+- 定制自己的开机logo，[教程](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/BIOS_Setup/Replce_Bios_Logo/README.md)
