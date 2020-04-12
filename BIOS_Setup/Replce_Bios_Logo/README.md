@@ -62,7 +62,8 @@ File > Search > GUID
 
 ## 刷写 BIOS
 将修改后的BIOS文件（AppleLogo.bin）拷贝到备份bios工具WIN64 > WIN64中  
-![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/BIOS_Setup/Replce_Bios_Logo/Picture/Step_13.png)   
-然后已管理员身份执行批处理脚本即可进行BIOS刷写  
+![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/BIOS_Setup/Replce_Bios_Logo/Picture/Step_13.png)     
+
+然后以管理员身份执行批处理脚本即可进行BIOS刷写  
 
 
