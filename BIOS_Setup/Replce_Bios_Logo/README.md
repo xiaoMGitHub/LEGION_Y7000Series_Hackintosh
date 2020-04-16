@@ -1,7 +1,7 @@
 ## 概述
 ![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/BIOS_Setup/Replce_Bios_Logo/Picture/apple_logo.jpg)  
 本教材基于小新pro13的机型进行编写，感谢小新pro13群里的@小宝大佬
-此教程仅限拯救者Y7000系列机型，另外因为bios的限制，修改bios后无法使用官方升级工具（未证实），必须使用fptw64工具强制刷写，因此有一定风险，如若你看完本教程处于懵逼状态，我不建议你自己修改并刷写bios，一旦刷写错误bios极有可能导致电脑无法开机或损坏，有编程器的可以重新写入正确bios，无编程器的只能送修。
+此教程仅限拯救者Y7000系列机型，如若你看完本教程处于懵逼状态，我不建议你自己修改并刷写bios，一旦刷写错误bios极有可能导致电脑无法开机或损坏，有编程器的可以重新写入正确bios，无编程器的只能送修。
 
 ## 使用到的工具
 * [UEFITool](https://github.com/LongSoft/UEFITool/releases)

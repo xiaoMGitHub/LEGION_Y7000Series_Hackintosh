@@ -5,10 +5,10 @@
 - 将 Advanced > Debug settings > Kernel Debug Serial Port 修改为 Leagacy UART
 
 ## 开启I2C触控板GPIO中断模式
-- 八代处理器修改  
-  > Advanced > PCH-IO Configuration >  Security Configuration >  Force unlock on all GPIO pads 修改为 Enabled
-- 九代处理器修改  
-  > 已提供一键修改脚本，减少误操作
+
+- 八代、九代处理器通用  
+ ![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/BIOS_Setup/Replce_Bios_Logo/Picture/Step_14.png)  
+ 
 - 使用 [MaciASL](https://github.com/acidanthera/MaciASL/releases) 工具打开 SSDT-I2C.aml 文件，找到 _INI 方法，修改如下：
   ```Swift
     Scope (_SB.PCI0.I2C1)
