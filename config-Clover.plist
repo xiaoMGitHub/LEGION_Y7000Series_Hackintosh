@@ -35,27 +35,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
+					<data>X0RTTQ==</data>
 					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change _OSI to XOSI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
+					<data>WERTTQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -63,13 +45,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1ExMQ==
-					</data>
+					<data>X1ExMQ==</data>
 					<key>Replace</key>
-					<data>
-					WFExMQ==
-					</data>
+					<data>WFExMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -77,13 +55,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1ExMg==
-					</data>
+					<data>X1ExMg==</data>
 					<key>Replace</key>
-					<data>
-					WFExMg==
-					</data>
+					<data>WFExMg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -91,41 +65,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					R1BSVwI=
-					</data>
+					<data>R1BSVwI=</data>
 					<key>Replace</key>
-					<data>
-					WFBSVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1BUUwE=
-					</data>
-					<key>Replace</key>
-					<data>
-					WlBUUwE=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(_WAK,1,S) to ZWAK, pair with SSDT-PTSWAK.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1dBSwk=
-					</data>
-					<key>Replace</key>
-					<data>
-					WldBSwk=
-					</data>
+					<data>WFBSVwI=</data>
 				</dict>
 			</array>
 			<key>Rtc8Allowed</key>
@@ -183,21 +125,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AACbPg==
-				</data>
-				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
-				</data>
-				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-stolenmem</key>
-				<data>
-				AAAwAQ==
-				</data>
+				<data>AACbPg==</data>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -217,6 +145,11 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+		</dict>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
@@ -236,7 +169,7 @@
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
@@ -245,15 +178,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				AIoChMB0Rw==
-				</data>
+				<data>AIoChMB0Rw==</data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.4,10.14.5,10.14.6,10.15.x</string>
 				<key>Replace</key>
-				<data>
-				AIoChMDrRw==
-				</data>
+				<data>AIoChMDrRw==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -261,47 +190,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				AIoChMB0TA==
-				</data>
+				<data>AIoChMB0TA==</data>
 				<key>MatchOS</key>
 				<string>10.14,10.14.1,10.14.2,10.14.3</string>
 				<key>Replace</key>
-				<data>
-				AIoChMDrTA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 Release kernel (c) vit9696</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Replace</key>
-				<data>
-				igKEwOtE
-				</data>
+				<data>AIoChMDrTA==</data>
 			</dict>
 		</array>
 	</dict>
