@@ -54,7 +54,7 @@ sudo sh -c "$(curl -fsSL https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/r
 
 If you approve my work, please suppoort me to keep updating via tipping
 
-| Paypel                                                       |
+| Paypal                                                       |
 | ---------------------------------------------------------- | 
 | [xiaoMGitHub](https://www.paypal.me/xiaoMGitHub) | 
 
