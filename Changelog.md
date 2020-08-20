@@ -10,6 +10,8 @@ LEGION Y7000Series Hackintosh Changelog
 - 本人提供的EFI如果没有特别注明，默认适用于 10.13.6 - 10.15.6
 
 #### v3.0.3
+- 8月20号更新内容：
+  * 完美支持 Big Sur Beta5
 - 8月16号更新内容：
   * 完美支持 Big Sur Beta4/Public Beta1
 - 8月4号更新内容：
