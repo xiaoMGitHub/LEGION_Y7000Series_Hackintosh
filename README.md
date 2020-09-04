@@ -1,4 +1,4 @@
-![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/Picture/macOS_Big_Sur.png)
+![image](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/Picture/macOS_Big_Sur_Beta6.png)
 
 ## 概述
 
