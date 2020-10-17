@@ -41,7 +41,7 @@
 - 睡眠唤醒（鼠标，键盘、电源键唤醒均正常）
 - 无线网络（更换白果卡BCM943602cs）
 - 蓝牙（更换白果卡BCM943602cs）
-- 触控板 (部分低配机型不支持多指操作)
+- 触控板
 - 随航（有线/无线）
 - 4K 屏幕（[教程](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/tree/master/4K_Display_Config)）
 - iMessage/FaceTime
