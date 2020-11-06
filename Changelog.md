@@ -10,6 +10,8 @@ LEGION Y7000Series Hackintosh Changelog
 - 本人提供的EFI如果没有特别注明，默认适用于 10.13.6 - 10.15.6
 
 #### v3.0.3
+- 11月06日更新内容：
+  * 更新 [ALCPlugFix](https://github.com/black-dragon74/ALCPlugFix-Swift) 
 - 10月17日更新内容：
   * 部分ELAN061B型号触控板支持多指手势
 - 10月16日更新内容：
