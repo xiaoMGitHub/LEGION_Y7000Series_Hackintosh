@@ -2,7 +2,9 @@
 
 ## 概述
 
-疑问解答可以提 [issues](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/issues) 给我或者加入我的QQ群：1014806625(已满)、216384299(已满)、477839538(拒绝用爱发电)
+疑问解答加入我的QQ群：1014806625(已满)、216384299(已满)、477839538(拒绝用爱发电)
+
+# 目前没有打算再公开更新的计划，由于某些机友不遵守游戏规则，如有需要建议加群。
 
 [中文版](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/README.md) | [English](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/README-en.md) | [Español](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-es.md)
 
