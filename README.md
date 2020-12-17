@@ -4,8 +4,6 @@
 
 疑问解答加入我的QQ群：1014806625(已满)、216384299(已满)、477839538(拒绝用爱发电)
 
-# 目前没有打算再公开更新的计划，由于某些机友不遵守游戏规则，如有需要建议加群。
-
 [中文版](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/README.md) | [English](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/README-en.md) | [Español](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-es.md)
 
 本文的目的是让 LENOVO LEGION Y7000/Y7000P-2018、Y7000/Y7000P-2019、Y7000/Y7000P-2020、Y9000K-2020、Y530、Y540、Y545、legion 5i、legion 7 系列笔记本电脑尽量完美的使用上 MacOS。
