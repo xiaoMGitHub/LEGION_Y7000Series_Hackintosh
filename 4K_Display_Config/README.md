@@ -36,16 +36,16 @@
   > 2、修改成这样，保存即可
  ```XML
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
-				<key>enable-max-pixel-clock-override</key>
-				<data>AQAAAA==</data>
-				<key>max-pixel-clock-frequency</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>enable-dpcd-max-link-rate-fix</key>
-				<data>AQAAAA==</data>
-			</dict>
+            <dict>
+                <key>AAPL,ig-platform-id</key>
+                <data>AACbPg==</data>
+                <key>dpcd-max-link-rate</key>
+                <data>FAAAAA==</data>
+                <key>enable-dpcd-max-link-rate-fix</key>
+                <data>AQAAAA==</data>
+                <key>enable-max-pixel-clock-override</key>
+                <data>AQAAAA==</data>
+                <key>enable-hdmi20</key>
+                <data>AQAAAA==</data>
+            </dict>
   ```
