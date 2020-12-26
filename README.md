@@ -2,11 +2,9 @@
 
 ## 概述
 
-疑问解答加入我的QQ群：1014806625(已满)、216384299(已满)、477839538(拒绝用爱发电)
+疑问解答加入我的QQ群：477839538
 
-[中文版](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/README.md) | [English](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/blob/master/README-en.md) | [Español](https://github.com/xiaoMGitHub/Lenovo_Y7000-Y530_Hackintosh/blob/master/README-es.md)
-
-本文的目的是让 LENOVO LEGION Y7000/Y7000P-2018、Y7000/Y7000P-2019、Y7000/Y7000P-2020、Y9000K-2020、Y530、Y540、Y545、legion 5i、legion 7 系列笔记本电脑尽量完美的使用上 MacOS。
+本文的目的是让 LENOVO LEGION Y7000/Y7000P-2018、Y7000/Y7000P-2019、Y7000/Y7000P-2020、Y9000K-2018、Y9000K-2019、Y9000K-2020、Y530、Y540、Y545、Y730、Y740、legion 5i、legion 7 系列笔记本电脑尽量完美的使用上 MacOS。
 
 注意：此系列笔记本电脑没有WiFi白名单，可以更换任意网卡，但强烈不推荐 DW1820A。
 
@@ -39,8 +37,8 @@
 - Mac App Store正常运行
 - CPU变频
 - 睡眠唤醒（鼠标，键盘、电源键唤醒均正常）
-- 无线网络（更换白果卡BCM943602cs）
-- 蓝牙（更换白果卡BCM943602cs）
+- 无线网络（更换白果卡BCM94360CD）
+- 蓝牙（更换白果卡BCM94360CD）
 - 触控板
 - 随航（有线/无线）
 - 4K 屏幕（[教程](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/tree/master/4K_Display_Config)）
