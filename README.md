@@ -4,9 +4,24 @@
 
 疑问解答加入我的QQ群：477839538
 
-本文的目的是让 LENOVO LEGION Y7000/Y7000P-2018、Y7000/Y7000P-2019、Y7000/Y7000P-2020、Y9000K-2018、Y9000K-2019、Y9000K-2020、Y530、Y540、Y545、Y730、Y740、legion 5i、legion 7 系列笔记本电脑尽量完美的使用上 MacOS。
+本文的目的是让 LENOVO 拯救者系列笔记本电脑尽量完美的使用上 MacOS。
 
 注意：此系列笔记本电脑没有WiFi白名单，可以更换任意网卡，但强烈不推荐 DW1820A。
+
+## 适用系统
+
+MacOS Big Sur 11.x  
+MacOS Catalina 10.15.x  
+MacOS Mojave 10.14.x  
+MacOS High Sierra 10.13.6 (17G2112)
+
+## 适用型号
+
+- Y7000/Y7000P/Y9000K-2018
+- Y7000/Y7000P/Y9000K-2019
+- Y7000/Y7000P/Y9000K-2020
+- Y530/Y540/Y545/Y730/Y740
+- Legion 5i/Legion 7
 
 ## 发布
 
@@ -39,7 +54,7 @@
 - 睡眠唤醒（鼠标，键盘、电源键唤醒均正常）
 - 无线网络（更换白果卡BCM94360CD）
 - 蓝牙（更换白果卡BCM94360CD）
-- 触控板
+- 触控板 （全系支持全手势）
 - 随航（有线/无线）
 - 4K 屏幕（[教程](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/tree/master/4K_Display_Config)）
 - iMessage/FaceTime
