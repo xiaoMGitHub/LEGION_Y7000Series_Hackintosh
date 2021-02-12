@@ -75,4 +75,10 @@ sudo sh -c "$(curl -fsSL https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/r
 | ---------------------------------------------------------- | ---------------------------------------------------- |
 | ![image](https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/Screenshot/%E5%BE%AE%E4%BF%A1160.jpg) | ![image](https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/Screenshot/%E6%94%AF%E4%BB%98%E5%AE%9D160.jpg) |
 
+## 致谢
 
+感谢 [apple](https://www.apple.com.cn/) 提供的 MacOS  
+感谢 [acidanthera](https://github.com/acidanthera) 提供的绝大部分核心驱动  
+感谢 [VoodooI2C](https://github.com/VoodooI2C) 提供的触控板驱动  
+感谢 [chilledHamza](https://github.com/chilledHamza/) 提供的 2018 款数字键盘修改方案  
+感谢 [rajiteh](https://github.com/rajiteh) 提供的 2019/2020 款数字键盘驱动方案
