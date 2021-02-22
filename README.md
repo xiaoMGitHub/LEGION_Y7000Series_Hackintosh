@@ -71,9 +71,9 @@ sudo sh -c "$(curl -fsSL https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/r
 
 如果您认可我的工作，可以通过捐赠支持我后续的更新
 
-| 微信                                                       | 支付宝                                               |
-| ---------------------------------------------------------- | ---------------------------------------------------- |
-| ![image](https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/Screenshot/%E5%BE%AE%E4%BF%A1160.jpg) | ![image](https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/Screenshot/%E6%94%AF%E4%BB%98%E5%AE%9D160.jpg) |
+| 微信                                                       | 支付宝                                               | Paypal |                                                    
+| ---------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------- | 
+| ![image](https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/Screenshot/%E5%BE%AE%E4%BF%A1160.jpg) | ![image](https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/Screenshot/%E6%94%AF%E4%BB%98%E5%AE%9D160.jpg) | [xiaoMGitHub](https://www.paypal.me/xiaoMGitHub) | 
 
 ## 致谢
 
