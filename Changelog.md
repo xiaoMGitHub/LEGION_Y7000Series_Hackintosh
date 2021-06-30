@@ -13,6 +13,7 @@ LEGION Y7000Series Hackintosh Changelog
 
 #### v4.0.0
 * 2018款 Y7000/Y7000P/Y530 支持从休眠中唤醒
+* 解决2020款 Y7000/Y7000P、Legion 5i 无法通过 hotpacth 屏蔽独显问题
 
 #### v3.0.4
  * 添加 MacOS Monterey 12+ 支持
