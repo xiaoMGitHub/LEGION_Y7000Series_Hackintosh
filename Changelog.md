@@ -1,7 +1,7 @@
 LEGION Y7000Series Hackintosh Changelog
 ========================================
 -  想提前体验最新EFI可以选择加入QQ群组[付费群，拒绝用爱发电] ：780936290
--  EFI 3.0.4尚未提供下载，可以前往下载 [3.0.4版本](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases/tag/v3.0.3)
+-  EFI 4.0.0 尚未提供下载，可以前往下载 [3.0.3版本](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases/tag/v3.0.3)
 - 本EFI支持以下机型：
   * 2018款 Y7000/Y7000P 以及国际版 Y530 全系列机型
   * 2018款 Y9000K 以及国际版 Y730 全系列机型
@@ -12,12 +12,12 @@ LEGION Y7000Series Hackintosh Changelog
 - 本人提供的EFI如果没有特别注明，默认适用于 10.13.6 - 12.0
 
 #### v4.0.0
+* 添加 MacOS Monterey 12+ 支持
 * 2018款 Y7000/Y7000P/Y530 支持从休眠（hibernatemode 25）中唤醒
 * 解决2020款 Y7000/Y7000P、Legion 5i 无法通过 hotpacth 屏蔽独显问题
 * 2020款 Y7000/Y7000P、Legion 5i 支持从休眠（hibernatemode 25）中唤醒
-
-#### v3.0.4
- * 添加 MacOS Monterey 12+ 支持
+* 修复 2018款 Y7000/Y530 触控板实体键(感谢[usr-sse2 与 chilledHamza 提供的修改方法](https://github.com/VoodooI2C/VoodooI2C/pull/445#issuecomment-826122715))
+* 添加屏幕背光平滑调节
 
 #### v3.0.3
  * 截止12月26号情况
