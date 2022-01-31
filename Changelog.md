@@ -1,7 +1,7 @@
 LEGION Y7000Series Hackintosh Changelog
 ========================================
 -  想提前体验最新EFI可以选择加入QQ群组[付费群，拒绝用爱发电] ：780936290
--  EFI 4.0.0 尚未提供下载，可以前往下载 [3.0.3版本](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases/tag/v3.0.3)
+-  EFI 4.0.0 已经提供下载，可以前往下载 [4.0.0版本](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases/)
 - 本EFI支持以下机型：
   * 2018款 Y7000/Y7000P 以及国际版 Y530 全系列机型
   * 2018款 Y9000K 以及国际版 Y730 全系列机型
