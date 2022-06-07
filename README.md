@@ -1,4 +1,4 @@
-![image](Picture/MacOS_Monterey_Beta.png)
+![image](Picture/VenturaBate.png)
 
 ## 概述
 
