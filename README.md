@@ -10,6 +10,7 @@
 
 ## 适用系统
 
+macOS Ventura 13.x  
 MacOS Monterey 12.x  
 MacOS Big Sur 11.x  
 MacOS Catalina 10.15.x  
@@ -29,7 +30,7 @@ MacOS High Sierra 10.13.6 (17G2112)
 最后发布的版本是 v4.0.0，前往 [Release Page](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases) 下载即可。
 
 ## 你需要什么
-- 下载好的 MacOS 镜像（支持 macOS High Sierra (10.13.6) - macOS MacOS Monterey 的镜像安装）
+- 下载好的 MacOS 镜像（支持 macOS High Sierra (10.13.6) - macOS Ventura 的镜像安装）
 - 16GB U盘
 
 ## BIOS确保设置
