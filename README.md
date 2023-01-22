@@ -27,7 +27,7 @@ MacOS High Sierra 10.13.6 (17G2112)
 
 ## 发布
 
-最后发布的版本是 v4.0.0，前往 [Release Page](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases) 下载即可。
+最后发布的版本是 v5.0.0，前往 [Release Page](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh/releases) 下载即可。
 
 ## 你需要什么
 - 下载好的 MacOS 镜像（支持 macOS High Sierra (10.13.6) - macOS Ventura 的镜像安装）
